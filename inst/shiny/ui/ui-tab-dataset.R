@@ -31,8 +31,11 @@ tabPanel(
     fluidRow(column(12, actionButton("submit", "Calculate!")))
     ),
   wellPanel(
-    h2("Results"),
-    fluidRow(column(12,verbatimTextOutput("test_result"))),
-    fluidRow(column(12,plotOutput("test_plot")))
+    conditionalPanel(
+      condition = "input.submit > 0",
+      h2("Results"),
+      fluidRow(column(12,verbatimTextOutput("test_result"))),
+      fluidRow(column(12,plotOutput("test_plot")))
+    )
   )
 )

@@ -66,3 +66,20 @@ output$s_test_result <- renderPrint({
 output$s_test_plot <- renderPlot({
   plot(s_test_result())
 })
+
+s_sim_result <- eventReactive(input$s_submit, {
+  res = unlist(lapply(X = 1:input$s_nsim, FUN = function(x){
+    X_R = rnorm(input$nR, mean = input$mR, sd = input$sR)
+    X_T = rnorm(input$nT, mean = input$mT, sd = input$sT)
+    # Perform Test
+    res = testis.tails(Test = X_T, Reference = X_R,
+                       q = input$s_q, alpha = input$s_alpha, c = s_c_value())
+    res$decision
+  }))
+  mean(res)
+})
+
+output$s_sim_result <- renderPrint({
+  cat(sprintf("When %s datasets are simulated with the given characteristics, the empirical power is %s. \nThat is, %s%% of the times we reject the null hypothesis and claim comparability.",
+              input$s_nsim, s_sim_result(), round(s_sim_result()*100,2)))
+})

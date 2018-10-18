@@ -20,9 +20,12 @@ tabPanel(
     shiny::fluidRow(column(12, actionButton("e_submit", "Calculate!")))
     ),
   shiny::wellPanel(
-    h2("Results"),
-    fluidRow(column(12,verbatimTextOutput("e_test_result"))),
-    fluidRow(column(12,plotOutput("e_test_plot")))
+    conditionalPanel(
+      condition = "input.e_submit > 0",
+      h2("Results"),
+      fluidRow(column(12,verbatimTextOutput("e_test_result"))),
+      fluidRow(column(12,plotOutput("e_test_plot")))
+    )
   )
 )
 

@@ -29,8 +29,12 @@ tabPanel(
                     numericInput("nT",value = 25,
                                  label = h5("Number of samples for Test product")))),
     fluidRow(column(4,numericInput("seed", value = NULL,
-                 label = h5("Seed for random number generation (optional value for reproducibility)")))),
-    fluidRow(column(3, downloadButton('s_downloadData', 'Download the generated dataset')))),
+                 label = h5("Seed for random number generation (optional value for reproducibility)"))),
+             column(4,numericInput("s_nsim", value = 1000, min = 1, max = 2000,
+                                   label = h5("Number of simulated datasets for calculating empirical power*")))),
+    fluidRow(column(8, "* Datasets with the given characteristics are simulated and
+                    the empirical rejection rate (empirical power) for this scenario is calculated")),
+    fluidRow(column(3, downloadButton('s_downloadData', 'Download one generated dataset')))),
   shiny::wellPanel(
     h2("2. Choose test options"),
     shiny::fluidRow(column(3, numericInput("s_q", label = "q", value = .1, min = 0, max = .5, step = 0.05)),
@@ -40,9 +44,15 @@ tabPanel(
     shiny::fluidRow(column(12, actionButton("s_submit", "Calculate!")))
   ),
   shiny::wellPanel(
-    h2("Results"),
-    fluidRow(column(12,verbatimTextOutput("s_test_result"))),
-    fluidRow(column(12,plotOutput("s_test_plot")))
+    conditionalPanel(
+      condition = "input.s_submit > 0",
+      h2("Results"),
+      h3("Empirical Power"),
+      fluidRow(column(12,verbatimTextOutput("s_sim_result"))),
+      h3("Example of single realization"),
+      fluidRow(column(12,verbatimTextOutput("s_test_result"))),
+      fluidRow(column(12,plotOutput("s_test_plot")))
+    )
   )
 )
 
