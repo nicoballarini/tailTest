@@ -1,0 +1,14 @@
+# ddPCR R package - Dean Attali 2015
+# --- Dataset tab UI --- #
+
+tabPanel(
+  title = "Dataset",
+  id    = "datasetTab",
+  value = "datasetTab",
+  name  = "datasetTab",
+  class = "fade in",
+  icon  = icon("table"),
+
+  tabsetPanel(
+  )
+)

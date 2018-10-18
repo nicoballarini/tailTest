@@ -1,0 +1,26 @@
+Package: soupr
+Type: Package
+Title: Subgroup Analyses for Clinical Trials
+Version: 0.2-1
+Date: 2017-03-21
+Author: Marius Thomas [aut, cre],
+    Bjoern Bornkamp [aut],
+    Baldur Magnusson [ctb]
+Maintainer: Marius Thomas <marius.thomas@novartis.com>
+Description: Naive and adjusted treatment effect estimation for subgroups.
+Imports:
+    MASS,
+    ggplot2,
+    survival,
+    Matrix,
+    matrixStats,
+    sampling,
+    parallel
+Suggests:
+    cowplot
+Depends:
+    R (>= 2.10)
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2017-03-21 14:59:26 UTC; bornkbj3
+RoxygenNote: 5.0.1

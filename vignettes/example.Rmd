@@ -1,0 +1,39 @@
+---
+title: "The tailTest package"
+author: "Johanna Mielke and Nicolas Ballarini"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The tailTest package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## testis.tails function
+
+```{r}
+library(tailTest)
+data(data_example)
+head(data_example)
+reference = data_example[which(data_example$Group == "Reference"), "value"]
+test = data_example[which(data_example$Group == "Test"), "value"]
+result = testis.tails(Test = test, Reference = reference, 
+                         q = 0.1, alpha = 0.05)
+result
+```
+
+
+## Plot generic function
+
+```{r, fig.width=7, fig.height=4}
+plot(result)
+```
+

@@ -1,0 +1,16 @@
+Package: tailTest
+Type: Package
+Title: An inferential methodology for comparability assessment of biosimilars
+Version: 0.1.0
+Author: Nicolas Ballarini [aut, cre], Johanna Mielke [aut, cre]
+Maintainer: Nicolas Ballarini <nicolas.ballarini@meduniwien.ac.at>
+Description:  Performs a test for comparability that is compatible with the ICH
+ guidelines in the sense that a range-type hypothesis is tested. A shiny app is 
+ included in the package for interactive use.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: shiny, markdown
+RoxygenNote: 6.0.1
+VignetteBuilder: utils

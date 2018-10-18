@@ -1,0 +1,66 @@
+---
+title: "Vignette Title"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Vignette Info
+
+```{r}
+##Figure
+Test = rnorm(n = 100, mean = 0, sd = 3)
+Reference = rnorm(n = 100, mean = 0, sd = 3)
+q = .9
+mT <- mean(Test)
+mR <- mean(Reference)
+sT <- sd(Test)
+sR <- sd(Reference)
+quan1 <- qnorm(q,     mean = mR, sd = sR)
+quan2 <- qnorm(1 - q, mean = mR, sd = sR)
+
+xseq <- seq(-7 , 7,length = 1000)
+resd1 <- resd2 <- numeric(1000)
+for (i in 1:1000) {
+  resd1[i] <- dnorm(xseq[i], mean = mT, sd = sT)
+  resd2[i] <- dnorm(xseq[i], mean = mR, sd = sR)
+}
+par(mfrow = c(1,2))
+
+#left panel
+curve(dnorm(x, mean = mR, sd = sR), 
+      xlim = c(-7, 7),  
+      main = "Reference",
+      ylab = "Density",
+      ylim = c(0, max(c(resd1, resd2)) + 0.01))
+abline(v = quan1, lty = 2)
+abline(v = quan2, lty = 2)
+
+#right panel
+curve(dnorm(x, mean = mT, sd = sT),
+      xlim = c(-7, 7), 
+      main = "Test", ylab = "Density",
+      ylim = c(0, max(c(resd1, resd2)) + 0.01))
+abline(v = quan1, lty = 2)
+abline(v = quan2, lty = 2)
+polygon(c(xseq[xseq < quan1], quan1),  c(resd1[xseq < quan1], 0), col = "red")
+polygon(c(xseq[xseq > quan2], quan2),  c(resd1[xseq > quan2], 0), col = "blue")
+
+
+result = testis.tails(Test = Test, Reference = Reference, q = 0.9, alpha = 0.05)
+plot(result)
+result
+s```
+

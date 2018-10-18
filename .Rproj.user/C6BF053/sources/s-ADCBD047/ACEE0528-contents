@@ -1,0 +1,56 @@
+##########################
+# Examples tab UI
+
+tabPanel(
+  title = "Examples",
+  id    = "examplesTab",
+  value = "examplesTab",
+  name  = "examplesTab",
+  class = "fade in",
+  icon  = icon("line-chart"),
+
+  # h1("Hasse Diagramms"),
+  h1("Examples of Hasse diagramms"),
+  shiny::wellPanel(
+    h2("1. Select your design"),
+  fluidRow(column(4,
+         selectInput("example_family",
+                     label = h5("Model Family"),
+                     choices = list("1. Two-way factorial" = 1,
+                                    "2. Two-way factorial with control" = 2,
+                                    "3. Two nested qualitative factors" = 3,
+                                    "4. Three or more qualitative factors,
+                                    nested in a chain" = 4),
+                     selected = 1)),
+  conditionalPanel(
+    condition = "input.example_family == 1 | input.example_family == 2",
+    column(3,
+           selectInput("example_factorial",
+                       label = h5("Factors"),
+                       choices = list("a. Orthogonal" = "ort",
+                                      "b. Non-orthogonal" = "nonort"),
+                       selected = 1)
+    )))),
+  column(12,
+                    h1(" "),
+                    sidebarLayout(
+                      sidebarPanel(
+                        uiOutput("choose_data"),
+                        radioButtons("example_type",
+                                     label = h3("Type of Plot"),
+                                     choices = list("Unscaled" = "I",
+                                                    "Scaled" = "II"),
+                                     selected = "I")
+                      ),
+                      mainPanel(
+                        conditionalPanel(
+                          condition = "input.example_family == 4",
+                          h1("Not implemented yet!")
+                        ),
+                        plotOutput("example_hasseExample"),
+                        tableOutput("example_aovExample")
+                      )
+                    )
+
+  )
+)

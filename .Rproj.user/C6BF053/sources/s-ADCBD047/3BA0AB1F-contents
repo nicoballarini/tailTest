@@ -1,0 +1,20 @@
+## Quick overview
+
+This tools allows you to perform the tail test as described in 
+<a target="_blank" href="https://github.com/nicoballarini/" >Mielke et.al. (2018)</a>.
+
+Select the **<i class="fa fa-file-excel-o"></i> Dataset** tab to load your own data and perform the tail test
+
+Select the **<i class="fa fa-table"></i> Anova** tab to create the diagram if you already have the anova tables.
+
+Select the **<i class="fa fa-line-chart"></i> Examples** tab to check some examples.
+
+## More information
+
+This tool is part of an R package. For more information, <a target="_blank" href="https://github.com/nicoballarini/" >see the complete README</a>.
+
+A peer-reviewed publication describing this tool is available in <a target="_blank" href="https://github.com/nicoballarini/" > A JOURNAL (2018)</a>.
+
+## Contact
+
+For any comments or questions, please <a target="_blank" href="mailto:joahanna.mielke@novartis.com">contact Johanna Mielke</a>.

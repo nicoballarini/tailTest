@@ -1,0 +1,120 @@
+##########################
+# Dataset tab UI
+
+tabPanel(
+  title = "Dataset",
+  id    = "datasetTab",
+  value = "datasetTab",
+  name  = "datasetTab",
+  class = "fade in",
+  icon  = icon("file-excel-o"),
+
+  h1("Analyze dataset and create Hasse diagramms for anova"),
+  shiny::wellPanel(
+    h2("1. Upload your data"),
+    fluidRow(column(3,fileInput("outputfile",label="Select data file in csv"))),
+    # h5("Preview first 6 rows of the dataset"),
+    fluidRow(column(3,tableOutput("head_table")))),
+  shiny::wellPanel(
+    h2("2. Select your design"),
+    fluidRow(column(4,
+                    selectInput("dataset_family",
+                                label = h5("Model Family"),
+                                choices = list("1. Two-way factorial" = 1,
+                                               "2. Two-way factorial with control" = 2,
+                                               "3. Two nested qualitative factors" = 3,
+                                               "4. Three or more qualitative factors,
+                                               nested in a chain" = 4,
+                                               "5. Split-plot design" = 5),
+                                selected = 1)),
+             conditionalPanel(
+               condition = "input.dataset_family == 1 | input.dataset_family == 2",
+               column(3,
+                      selectInput("dataset_factorial",
+                                  label = h5("Factors"),
+                                  choices = list("a. Orthogonal" = "ort",
+                                                 "b. Non-orthogonal" = "nonort"),
+                                  selected = 1)
+               )))),
+  shiny::wellPanel(
+    h2("3. Choose the corresponding variables"),
+    shiny::fluidRow(column(6,
+                           shiny::uiOutput("choose_Vars"),
+                           shiny::uiOutput("choose_Vars4"),
+                           column(12,
+                                  actionButton("submit", "Calculate!")))
+    )
+  ),
+  column(12,
+         ## Create your own Hasse! ----------------------------------------------
+         h1(" "),
+         h2("Results"),
+         sidebarLayout(
+           sidebarPanel(width = 4,
+                        radioButtons("dataset_type2", label = h3("Type of Plot"),
+                                     choices = list("Unscaled" = "I",
+                                                    "Scaled" = "II"),
+                                     selected = "I"),
+                        downloadButton('dataset_downloadPlot', 'Download Plot'),
+                        # *Graphical parameters ----
+                        checkboxInput("dataset_graphparam", label = "Show graphical parameters", value = FALSE),
+                        conditionalPanel(
+                          condition = "input.dataset_graphparam",
+                          checkboxInput("dataset_showborder", label = "Plot border", value = T),
+                          conditionalPanel(
+                            condition = "input.dataset_family == 1 | input.dataset_family == 2",
+                            selectInput("dataset_residual.position",
+                                        label = "Residual position",
+                                        choices = list("Bottom right" = "bottomright",
+                                                       "Bottom left" = "bottomleft",
+                                                       "Middle right" = "midright",
+                                                       "Middle left" = "midleft",
+                                                       "Top right" = "topright",
+                                                       "Top left" = "topleft"),
+                                        selected = 1),
+                            h1(""),
+                            numericInput(inputId = "dataset_residual.offset",
+                                         label   = "Residual offset",
+                                         value   = 0.25, min = -10, max = 10, step = 0.25),
+                            h4("Labels position"),
+                            rHandsontableOutput("dataset_hot.position"),
+                            h1(""),
+                            numericInput(inputId = "dataset_labels.offset",
+                                         label = "Labels offset",
+                                         value = 0.5, min = -3, max = 3, step = 0.10)
+                          ),
+                          conditionalPanel(
+                            condition = "input.dataset_family == 3",
+                            h1(""),
+                            numericInput(inputId = "dataset_SSfit.offset",
+                                         label   = "SSfit offset",
+                                         value   = 2.5, min = -10, max = 10, step = 0.25),
+                            h1(""),
+                            numericInput(inputId = "dataset_rss.offset",
+                                         label = "RSS offset",
+                                         value = 4, min = -10, max = 10, step = 0.25)
+                          ),
+                          numericInput(inputId = "dataset_width",
+                                       label = "Width (in px)",
+                                       value = 450, min = 300, step = 5),
+                          numericInput(inputId = "dataset_height",
+                                       label = "Height (in px)",
+                                       value = 600, min = 300, step = 5)
+                        )
+           ),
+           mainPanel(width = 8,
+                     conditionalPanel(
+                       condition = "input.dataset_family == 4 | input.dataset_family == 5",
+                       h1("Not implemented yet!")
+                     ),
+                     conditionalPanel(
+                       condition = "input.dataset_family != 4 & input.dataset_family != 5",
+                       tableOutput("dataset_aovTable"),
+                       imageOutput("dataset_hasseCreate",
+                        height = 500)
+                     )
+
+           )
+         )
+  )
+)

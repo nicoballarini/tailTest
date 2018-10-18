@@ -1,0 +1,12 @@
+name: hasseaov
+title: HasseAOV
+username:
+account: nballarini
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 230523
+bundleId: 1051448
+url: https://nballarini.shinyapps.io/hasseaov/
+when: 1509355708.06621
+asMultiple: FALSE
+asStatic: FALSE
