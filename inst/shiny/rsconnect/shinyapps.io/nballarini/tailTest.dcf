@@ -5,8 +5,8 @@ account: nballarini
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 459011
-bundleId: 1649033
+bundleId: 2019425
 url: https://nballarini.shinyapps.io/tailTest/
-when: 1539845905.15468
+when: 1555537947.79133
 asMultiple: FALSE
 asStatic: FALSE

@@ -1,156 +1,0 @@
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ [K]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ githtopnohup R CMD BATCH --vanilla --no-save M015.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnohup R CMD BATCH --vanilla --no-save simulations_paper.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pcd Rpackages/tailTest/inst/sim/nohup R CMD BATCH --vanilla --no-save M016.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtop[Knohup R CMD BATCH --vanilla --no-save M014.R 3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnohup R CMD BATCH --vanilla --no-save M001.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pcd inst/manuscript/htop[Knohup R CMD BATCH --vanilla --no-save M002.R3.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pgit push origin TwoStage --forcefilter-branch --tree-filter 'rm -rf paper/sim' HEAD[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pcommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kfilter-branch --tree-filter 'rm -rf paper/sim' HEAD[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Ppush -u origin TwoStagecommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuspush -u origin TwoStagecommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kpush -u origin TwoStage[10PTwoStagecommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kals[Kcd ..[1Phtopnohup R CMD BATCH --vanilla --no-save 101.R 007[C[C[C6[C[C[C5[C[C[C6[C[C[C7[C[C[C101[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtop[Kcd ..[3Plsgit add -aAcommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush TwoStage[K-u origin TwoStageadd -A[Kcommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Ppush -u origin TwoStagestatus[Kadd -Acommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Ppush -u origin TwoStagefilter-branch --tree-filter 'rm -rf paper/sim' HEAD[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kcommit -m "Results for Bremen presentation"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfilter-branch --tree-filter 'rm -rf paper/sim' HEAD[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Ppush origin TwoStage --forcenohup R CMD BATCH --vanilla --no-save M003.R [1P2.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtop[Kcd inst/manuscript/nohup R CMD BATCH --vanilla --no-save M001.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnohup R CMD BATCH --vanilla --no-save M013.R 4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtop[Kcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnohup R CMD BATCH --vanilla --no-save M016.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcd Rpackages/tailTest/inst/sim/nohup R CMD BATCH --vanilla --no-save simulations_paper.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcd Rpackages/OptimalTrial/inst/manuscript/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnohup R CMD BATCH --vanilla --no-save M015.R [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chtop[K[1Pgit init
-Initialized empty Git repository in /home/nico/Rpackages/tailTest/.git/
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git commit -m "first commit"git commit -m "first commit"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"s"u"b"m"i"t"t"e"d" "p"a"p"e"r"
-On branch master
-
-Initial commit
-
-Untracked files:
-	[31m.Rbuildignore[m
-	[31m.Rproj.user/[m
-	[31mDESCRIPTION[m
-	[31mNAMESPACE[m
-	[31mR/[m
-	[31minst/[m
-	[31mman/[m
-	[31mtailTest.Rproj[m
-	[31mtests/[m
-	[31mvignettes/[m
-
-nothing added to commit but untracked files present
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git add .
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git add .commit -m "submitted paper"
-[master (root-commit) a30a50f] submitted paper
- 116 files changed, 13496 insertions(+)
- create mode 100755 .Rbuildignore
- create mode 100755 .Rproj.user/C6BF053/console06/INDEX001
- create mode 100755 .Rproj.user/C6BF053/cpp-definition-cache
- create mode 100755 .Rproj.user/C6BF053/pcs/debug-breakpoints.pper
- create mode 100755 .Rproj.user/C6BF053/pcs/files-pane.pper
- create mode 100755 .Rproj.user/C6BF053/pcs/source-pane.pper
- create mode 100755 .Rproj.user/C6BF053/pcs/windowlayoutstate.pper
- create mode 100755 .Rproj.user/C6BF053/pcs/workbench-pane.pper
- create mode 100755 .Rproj.user/C6BF053/persistent-state
- create mode 100755 .Rproj.user/C6BF053/rmd-outputs
- create mode 100755 .Rproj.user/C6BF053/saved_source_markers
- create mode 100755 .Rproj.user/C6BF053/sources/prop/238BE9AB
- create mode 100755 .Rproj.user/C6BF053/sources/prop/3E0C7E3
- create mode 100755 .Rproj.user/C6BF053/sources/prop/47D94FA8
- create mode 100755 .Rproj.user/C6BF053/sources/prop/4F7337E7
- create mode 100755 .Rproj.user/C6BF053/sources/prop/5A129118
- create mode 100755 .Rproj.user/C6BF053/sources/prop/69D62FF5
- create mode 100755 .Rproj.user/C6BF053/sources/prop/709AD0DE
- create mode 100755 .Rproj.user/C6BF053/sources/prop/738AD702
- create mode 100755 .Rproj.user/C6BF053/sources/prop/78667954
- create mode 100755 .Rproj.user/C6BF053/sources/prop/844A9E4F
- create mode 100755 .Rproj.user/C6BF053/sources/prop/98272DD3
- create mode 100755 .Rproj.user/C6BF053/sources/prop/A2A2C40E
- create mode 100755 .Rproj.user/C6BF053/sources/prop/A5F71F9A
- create mode 100755 .Rproj.user/C6BF053/sources/prop/AC277F08
- create mode 100755 .Rproj.user/C6BF053/sources/prop/BFD92757
- create mode 100755 .Rproj.user/C6BF053/sources/prop/C182957A
- create mode 100755 .Rproj.user/C6BF053/sources/prop/C32DB678
- create mode 100755 .Rproj.user/C6BF053/sources/prop/D2730218
- create mode 100755 .Rproj.user/C6BF053/sources/prop/FA77666D
- create mode 100755 .Rproj.user/C6BF053/sources/prop/INDEX
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/15B104CE-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/1DD58792-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/25B6ABD8-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/3ABC7B2B-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/3BA0AB1F-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/4CEB4381-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/5700FF62-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/6E746808-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/6E887877-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/88F70EED-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/8B6BAB10-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/9704A728-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/9AB45671-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/ACEE0528-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/AD162DC1-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/B02536BE-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/BE25A096-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/C87C9D52-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/CAB27415-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/D8BF450B-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/F0C8C42D-contents
- create mode 100755 .Rproj.user/C6BF053/sources/s-ADCBD047/lock_file
- create mode 100644 .Rproj.user/F0676BD0/console06/68DAA2A7
- create mode 100644 .Rproj.user/F0676BD0/console06/68DAA2A7.env
- create mode 100644 .Rproj.user/F0676BD0/console06/INDEX001
- create mode 100644 .Rproj.user/F0676BD0/cpp-definition-cache
- create mode 100644 .Rproj.user/F0676BD0/pcs/debug-breakpoints.pper
- create mode 100644 .Rproj.user/F0676BD0/pcs/files-pane.pper
- create mode 100644 .Rproj.user/F0676BD0/pcs/packages-pane.pper
- create mode 100644 .Rproj.user/F0676BD0/pcs/source-pane.pper
- create mode 100644 .Rproj.user/F0676BD0/pcs/windowlayoutstate.pper
- create mode 100644 .Rproj.user/F0676BD0/pcs/workbench-pane.pper
- create mode 100644 .Rproj.user/F0676BD0/persistent-state
- create mode 100644 .Rproj.user/F0676BD0/saved_source_markers
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/2FF2B148
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/568CA6A2
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/693F2160
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/6AE39058
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/6D324107
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/6D3AF54C
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/BFF674D3
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/C7ACCD65
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/EF344086
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/F1B3B1DF
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/F8F63994
- create mode 100644 .Rproj.user/F0676BD0/sources/prop/INDEX
- create mode 100644 .Rproj.user/F0676BD0/sources/s-f6efa6fb/lock_file
- create mode 100755 .Rproj.user/shared/notebooks/patch-chunk-names
- create mode 100644 .Rproj.user/shared/notebooks/paths
- create mode 100644 DESCRIPTION
- create mode 100644 NAMESPACE
- create mode 100644 R/functions.R
- create mode 100644 R/zzz.R
- create mode 100644 inst/extdata/data_example.R
- create mode 100644 inst/extdata/data_example.csv
- create mode 100644 inst/extdata/data_example.xls
- create mode 100644 inst/shiny/rsconnect/shinyapps.io/nballarini/hasseaov.dcf
- create mode 100644 inst/shiny/rsconnect/shinyapps.io/nballarini/tailTest.dcf
- create mode 100644 inst/shiny/server.R
- create mode 100644 inst/shiny/server/functions.R
- create mode 100644 inst/shiny/server/srv-tab-dataset.R
- create mode 100644 inst/shiny/server/srv-tab-examples.R
- create mode 100644 inst/shiny/server/srv-tab-home.R
- create mode 100644 inst/shiny/server/srv-tab-simulate.R
- create mode 100644 inst/shiny/text/about.md
- create mode 100644 inst/shiny/ui.R
- create mode 100644 inst/shiny/ui/ui-tab-about.R
- create mode 100644 inst/shiny/ui/ui-tab-dataset.R
- create mode 100644 inst/shiny/ui/ui-tab-examples.R
- create mode 100644 inst/shiny/ui/ui-tab-home.R
- create mode 100644 inst/shiny/ui/ui-tab-simulate.R
- create mode 100644 inst/sim/simulations_paper.R
- create mode 100644 inst/sim/simulations_paper.RDS
- create mode 100644 inst/sim/simulations_paper.Rout
- create mode 100644 inst/sim/simulations_paper.pdf
- create mode 100644 inst/sim/simulations_paper_2.pdf
- create mode 100644 inst/sim/simulations_paper_by_case.R
- create mode 100644 man/data_example.Rd
- create mode 100644 man/plot.testTail.Rd
- create mode 100644 man/print.testTail.Rd
- create mode 100644 man/tailTest_gui.Rd
- create mode 100644 man/testis.tails.Rd
- create mode 100755 tailTest.Rproj
- create mode 100644 tests/test_critical_value.R
- create mode 100644 vignettes/example.Rmd
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git remote add origin git@github.com:nicoballarini/tailTest.git
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git push -u origin master
-ssh: Could not resolve hostname github.com: Name or service not known
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git remote add origin https://github.com/nicoballarini/tailTest.git
-fatal: remote origin already exists.
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ ^C
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ [K]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git remote rm origin
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git remote rm originadd origin https://github.com/nicoballarini/tailTest.git
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ git remote add origin https://github.com/nicoballarini/tailTest.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm origin[Kadd origin https://github.com/nicoballarini/tailTest.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[42Ppush -u origin master
-fatal: unable to access 'https://github.com/nicoballarini/tailTest.git/': Could not resolve host: github.com
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ ^C
-]0;/home/nico/Rpackages/tailTest]0;nico@node2: ~/Rpackages/tailTestnico@node2:~/Rpackages/tailTest$ 

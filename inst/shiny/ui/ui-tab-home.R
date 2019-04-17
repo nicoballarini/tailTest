@@ -12,6 +12,21 @@ tabPanel(
     id = "analyzeNextMsg",
     class = "next-msg",
     "data-step"="1", "data-intro"="text step 1",
+    "Establishing comparability of an originator and its biosimilar at the
+    structural and functional level, by analyzing so-called quality attributes,
+    is an important step in biosimilar development.
+    We propose the 'tail-test' to improve the alignment of statistical
+    hypothesis testing with scientific judgment by shifting away from the
+    often-used comparison of mean values toward a range-based comparison.
+    This web-based tool allows to upload a dataset and perform the hypothesis
+    test or simulate its operating characteristics"
+  ),
+  br(),
+  br(),
+  div(
+    id = "analyzeNextMsg",
+    class = "next-msg",
+    "data-step"="1", "data-intro"="text step 1",
     "If you have raw data and want to upload it and do the tail-test, then ",
     actionLink("toDataset", "go to the Dataset tab")
   ),
@@ -24,7 +39,7 @@ tabPanel(
   div(
     id = "analyzeNextMsg",
     class = "next-msg",
-    "If you want to explore some examples, then ",
+    "If you want to explore examples, then ",
     actionLink("toExamples", "go to the Examples tab")
   )
 )
